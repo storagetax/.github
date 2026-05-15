@@ -77,15 +77,15 @@ Five focused services, one job each. None of them run in your environment except
 
 ## Tech we're built on
 
-![Java 21](https://img.shields.io/badge/Java-21-1a1144?style=for-the-badge&logo=openjdk&logoColor=a78bfa&labelColor=0a0e1f)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4-1a1144?style=for-the-badge&logo=springboot&logoColor=a78bfa&labelColor=0a0e1f)
-![btrfs](https://img.shields.io/badge/btrfs-pools-1a1144?style=for-the-badge&logoColor=a78bfa&labelColor=0a0e1f)
-![MySQL](https://img.shields.io/badge/MySQL-8-1a1144?style=for-the-badge&logo=mysql&logoColor=a78bfa&labelColor=0a0e1f)
-![Redis](https://img.shields.io/badge/Redis-7-1a1144?style=for-the-badge&logo=redis&logoColor=a78bfa&labelColor=0a0e1f)
-![InfluxDB](https://img.shields.io/badge/InfluxDB-2-1a1144?style=for-the-badge&logo=influxdb&logoColor=a78bfa&labelColor=0a0e1f)
-![Azure](https://img.shields.io/badge/Azure-supported-1a1144?style=for-the-badge&logo=microsoftazure&logoColor=a78bfa&labelColor=0a0e1f)
-![AWS](https://img.shields.io/badge/AWS-supported-1a1144?style=for-the-badge&logo=amazonaws&logoColor=a78bfa&labelColor=0a0e1f)
-![GCP](https://img.shields.io/badge/GCP-supported-1a1144?style=for-the-badge&logo=googlecloud&logoColor=a78bfa&labelColor=0a0e1f)
+![Java 21](https://img.shields.io/badge/Java-21-007396?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot 3](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![btrfs](https://img.shields.io/badge/btrfs-pools-2C3E50?style=flat-square)
+![MySQL 8](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)
+![InfluxDB](https://img.shields.io/badge/InfluxDB-2-22ADF6?style=flat-square&logo=influxdb&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-supported-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-supported-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-supported-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 
 ## Try it
 
