@@ -7,7 +7,6 @@
 ### Real-time storage right-sizing for cloud VMs.
 ### Stop paying for capacity you never use.
 
-[**Open the dashboard →**](https://storagetax.lovable.app) &nbsp;·&nbsp;
 [**Book a 15-min demo →**](https://storagetax.lovable.app)
 
 </div>
