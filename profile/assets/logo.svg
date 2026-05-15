@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="orbGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="18" fill="url(#orbGrad)"/>
+
+  <path
+    d="M32 14 L18 22 v20 l14 8 l14 -8 v-20 z M18 22 l14 8 l14 -8 M32 30 v20"
+    stroke="#1a0a05"
+    stroke-width="2.2"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round"/>
+</svg>
