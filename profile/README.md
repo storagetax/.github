@@ -44,7 +44,7 @@ Per-team, per-tag dashboards showing capacity vs. used vs. paid. Drives the conv
 
 ## How it works
 
-1. **Install a 12&nbsp;MB agent** on each VM (one-click Azure VM Extension, AWS SSM, or `curl | bash`). The agent dials out only — no inbound ports, no SSH keys.
+1. **Install a 25&nbsp;MB agent** on each VM (one-click Azure VM Extension, AWS SSM, or `curl | bash`). The agent dials out only — no inbound ports, no SSH keys.
 2. **Discover** your existing storage and mount points. You choose which to manage.
 3. **Watch** live metrics flow in. Right-sizing kicks in within seconds of the first surge.
 
