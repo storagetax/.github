@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://placehold.co/1200x320/0b1020/ffffff?text=StorageTax+%E2%80%94+pay+for+what+you+use,+not+what+you+provisioned" alt="StorageTax hero banner" width="100%" />
+<img src="https://placehold.co/1200x320/0b1020/ffffff?text=Storagetax+%E2%80%94+pay+for+what+you+use,+not+what+you+provisioned" alt="Storagetax hero banner" width="100%" />
 
-# StorageTax
+# Storagetax
 
 ### Real-time storage right-sizing for cloud VMs.
 ### Stop paying for capacity you never use.
@@ -19,7 +19,7 @@
 Cloud teams provision storage for the **worst hour of the year** and pay for it 8,760 hours a year.
 A typical 1&nbsp;TB pool on Azure Premium SSD runs **$135/month**, regardless of whether you're using 80 GB or 800 GB of it.
 
-StorageTax watches your VMs in real time, predicts headroom, and right-sizes storage **without downtime** — shrinking when you're idle, expanding the moment a surge starts, and reclaiming orphaned disks the moment a workload moves.
+Storagetax watches your VMs in real time, predicts headroom, and right-sizes storage **without downtime** — shrinking when you're idle, expanding the moment a surge starts, and reclaiming orphaned disks the moment a workload moves.
 
 ## What you get
 
@@ -55,7 +55,7 @@ Per-team, per-tag dashboards showing capacity vs. used vs. paid. Drives the conv
 ## Architecture (high level)
 
 ```
-   Your VMs            StorageTax cloud
+   Your VMs            Storagetax cloud
   +---------+           +-------------------+
   |  agent  |  ───────► |  orchestrator     |  ──► metrics TSDB
   +---------+   WSS     |  (ingest+route)   |
