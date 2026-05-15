@@ -30,7 +30,7 @@ Per-VM, per-mount, per-device metrics streamed over WebSocket. Spot a runaway lo
 <td width="33%" valign="top">
 
 ### Automatic right-sizing
-btrfs-based pools that grow during surges and shrink during quiet hours. No restart, no downtime, no scripts.
+Storage pools that grow during surges and shrink during quiet hours. No restart, no downtime, no scripts.
 
 </td>
 <td width="33%" valign="top">
@@ -60,7 +60,7 @@ Per-team, per-tag dashboards showing capacity vs. used vs. paid. Drives the conv
        │                          ▼
        │                +-------------------+        +-------------+
        │                |    right-sizer    |  ◄───  |  dashboard  |
-       │                |  (btrfs ops)      |        |  (you)      |
+       │                |  (pool ops)       |        |  (you)      |
        │                +---------+---------+        +-------------+
        └────────────────── shrink / expand ──────────────────┘
                           (idempotent, no downtime)
@@ -79,7 +79,6 @@ Five focused services, one job each. None of them run in your environment except
 
 ![Java 21](https://img.shields.io/badge/Java-21-007396?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot 3](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![btrfs](https://img.shields.io/badge/btrfs-pools-2C3E50?style=flat-square)
 ![MySQL 8](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![InfluxDB](https://img.shields.io/badge/InfluxDB-2-22ADF6?style=flat-square&logo=influxdb&logoColor=white)
