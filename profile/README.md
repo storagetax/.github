@@ -4,7 +4,7 @@
 
 ### Stop paying for capacity you never use.
 
-[**Book a 15-min demo →**](https://storagetax.lovable.app)
+[**Book a 15-min demo →**](https://www.storagetax.com)
 
 </div>
 
@@ -88,9 +88,9 @@ Five focused services, one job each. None of them run in your environment except
 
 ## Try it
 
-The product lives at **[storagetax.lovable.app](https://storagetax.lovable.app)**.
+The product lives at **[www.storagetax.com](https://www.storagetax.com)**.
 The source repositories in this org are private. If you'd like a tour of the internals,
-[book a call](https://storagetax.lovable.app) and we'll walk you through it.
+[book a call](https://www.storagetax.com) and we'll walk you through it.
 
 ---
 
@@ -98,6 +98,6 @@ The source repositories in this org are private. If you'd like a tour of the int
 
 Built by storage engineers who got tired of paying for empty disks.
 
-[storagetax.lovable.app](https://storagetax.lovable.app)
+[www.storagetax.com](https://www.storagetax.com)
 
 </div>
