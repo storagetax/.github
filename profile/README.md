@@ -1,10 +1,7 @@
 <div align="center">
 
-<img src="https://placehold.co/1200x320/0b1020/ffffff?text=Storagetax+%E2%80%94+pay+for+what+you+use,+not+what+you+provisioned" alt="Storagetax hero banner" width="100%" />
+<img src="https://raw.githubusercontent.com/storagetax/.github/master/profile/assets/hero.svg" alt="Storagetax — real-time storage right-sizing for cloud VMs" width="100%" />
 
-# Storagetax
-
-### Real-time storage right-sizing for cloud VMs.
 ### Stop paying for capacity you never use.
 
 [**Book a 15-min demo →**](https://storagetax.lovable.app)
@@ -80,15 +77,15 @@ Five focused services, one job each. None of them run in your environment except
 
 ## Tech we're built on
 
-![Java 21](https://img.shields.io/badge/Java-21-007396?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot 3](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![btrfs](https://img.shields.io/badge/btrfs-pools-2C3E50?style=flat-square)
-![MySQL 8](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)
-![InfluxDB](https://img.shields.io/badge/InfluxDB-2-22ADF6?style=flat-square&logo=influxdb&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-supported-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-supported-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-supported-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Java 21](https://img.shields.io/badge/Java-21-1a1144?style=for-the-badge&logo=openjdk&logoColor=a78bfa&labelColor=0a0e1f)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4-1a1144?style=for-the-badge&logo=springboot&logoColor=a78bfa&labelColor=0a0e1f)
+![btrfs](https://img.shields.io/badge/btrfs-pools-1a1144?style=for-the-badge&logoColor=a78bfa&labelColor=0a0e1f)
+![MySQL](https://img.shields.io/badge/MySQL-8-1a1144?style=for-the-badge&logo=mysql&logoColor=a78bfa&labelColor=0a0e1f)
+![Redis](https://img.shields.io/badge/Redis-7-1a1144?style=for-the-badge&logo=redis&logoColor=a78bfa&labelColor=0a0e1f)
+![InfluxDB](https://img.shields.io/badge/InfluxDB-2-1a1144?style=for-the-badge&logo=influxdb&logoColor=a78bfa&labelColor=0a0e1f)
+![Azure](https://img.shields.io/badge/Azure-supported-1a1144?style=for-the-badge&logo=microsoftazure&logoColor=a78bfa&labelColor=0a0e1f)
+![AWS](https://img.shields.io/badge/AWS-supported-1a1144?style=for-the-badge&logo=amazonaws&logoColor=a78bfa&labelColor=0a0e1f)
+![GCP](https://img.shields.io/badge/GCP-supported-1a1144?style=for-the-badge&logo=googlecloud&logoColor=a78bfa&labelColor=0a0e1f)
 
 ## Try it
 
