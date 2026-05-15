@@ -1,65 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0e1f"/>
-      <stop offset="55%" stop-color="#101635"/>
-      <stop offset="100%" stop-color="#1a1144"/>
+      <stop offset="0%"   stop-color="#08070b"/>
+      <stop offset="100%" stop-color="#06080d"/>
     </linearGradient>
-    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7dd3fc"/>
-      <stop offset="50%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#f0abfc"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+
+    <radialGradient id="glowAmber" cx="12%" cy="18%" r="55%">
+      <stop offset="0%"  stop-color="#fbbf24" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#fbbf24" stop-opacity="0"/>
     </radialGradient>
+
+    <radialGradient id="glowPink" cx="88%" cy="82%" r="55%">
+      <stop offset="0%"  stop-color="#ec4899" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#fbbf24"/>
+      <stop offset="35%"  stop-color="#fb923c"/>
+      <stop offset="70%"  stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ef4444" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#fb923c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.012)" stroke-width="1"/>
+    </pattern>
   </defs>
 
-  <rect width="1200" height="360" fill="url(#bg)"/>
-  <ellipse cx="600" cy="180" rx="600" ry="260" fill="url(#glow)"/>
+  <rect width="1200" height="380" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="url(#grid)" opacity="0.6"/>
+  <rect width="1200" height="380" fill="url(#glowAmber)"/>
+  <rect width="1200" height="380" fill="url(#glowPink)"/>
 
-  <g fill="#3b3f6d" opacity="0.35">
-    <circle cx="100" cy="80"  r="2.5"/>
-    <circle cx="220" cy="40"  r="1.6"/>
-    <circle cx="320" cy="120" r="2.0"/>
-    <circle cx="900" cy="60"  r="2.2"/>
-    <circle cx="1050" cy="140" r="1.8"/>
-    <circle cx="1120" cy="80" r="2.5"/>
-    <circle cx="180" cy="290" r="2.0"/>
-    <circle cx="60"  cy="220" r="1.8"/>
-    <circle cx="1000" cy="280" r="2.2"/>
-    <circle cx="1140" cy="240" r="1.6"/>
+  <!-- ── BRAND BLOCK (stacked + centered, like .lf-brand on the login page) ── -->
+  <g transform="translate(576, 40)">
+    <rect width="48" height="48" rx="13" fill="url(#orb)"/>
+    <path d="M24 10 L13 16 v14 l11 6 l11 -6 v-14 z M13 16 l11 6 l11 -6 M24 22 v14"
+          stroke="#1a0a05" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
 
   <text
-    x="600" y="180"
+    x="600" y="118"
     text-anchor="middle"
     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="96"
+    font-size="26"
     font-weight="700"
-    letter-spacing="-2"
-    fill="url(#title)">Storagetax</text>
+    letter-spacing="-0.5"
+    fill="#ffffff">Storagetax</text>
 
   <text
-    x="600" y="230"
+    x="600" y="140"
+    text-anchor="middle"
+    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+    font-size="11"
+    font-weight="600"
+    letter-spacing="1.8"
+    fill="#7a6b5c">STORAGE · PERFORMANCE · MONITORING</text>
+
+  <!-- ── HEADLINE ── -->
+  <text
+    x="600" y="225"
     text-anchor="middle"
     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="22"
-    font-weight="400"
-    letter-spacing="2"
-    fill="#cbd5e1"
-    opacity="0.85">REAL-TIME STORAGE RIGHT-SIZING FOR CLOUD VMs</text>
+    font-size="48"
+    font-weight="800"
+    letter-spacing="-1.2"
+    fill="#ffffff">Stop paying for capacity <tspan fill="url(#title)">you never use</tspan>.</text>
 
-  <line x1="500" y1="265" x2="700" y2="265" stroke="#a78bfa" stroke-width="1.5" opacity="0.4"/>
+  <line x1="500" y1="265" x2="700" y2="265" stroke="url(#rule)" stroke-width="1.5"/>
 
   <text
     x="600" y="300"
     text-anchor="middle"
     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-    font-size="18"
-    font-weight="300"
-    fill="#94a3b8"
-    opacity="0.7">pay for what you use, not what you provisioned</text>
+    font-size="16"
+    font-weight="400"
+    fill="#cab8a8"
+    opacity="0.9">Real-time storage right-sizing for cloud VMs.</text>
 </svg>
