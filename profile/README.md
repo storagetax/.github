@@ -15,7 +15,7 @@
 Cloud teams provision storage for the **worst hour of the year** and pay for it 8,760 hours a year.
 A typical 1&nbsp;TB pool on Azure Premium SSD runs **$135/month**, regardless of whether you're using 80 GB or 800 GB of it.
 
-Storagetax watches your VMs in real time, predicts headroom, and right-sizes storage **without downtime** — shrinking when you're idle, expanding the moment a surge starts, and reclaiming orphaned disks the moment a workload moves.
+Storagetax watches your VMs in real time, surfaces the savings the moment they exist, and — on your signal — creates a right-sized pool during your maintenance window. After that, it autonomously expands during surges, shrinks during quiet hours, and reclaims orphaned disks. **No downtime, ever.**
 
 ## What you get
 
@@ -29,8 +29,8 @@ Per-VM, per-mount, per-device metrics streamed over WebSocket. Spot a runaway lo
 </td>
 <td width="33%" valign="top">
 
-### Automatic right-sizing
-Storage pools that grow during surges and shrink during quiet hours. No restart, no downtime, no scripts.
+### Right-sizing you control
+You schedule the first pool creation when you're ready. After that, storage grows during surges and shrinks during quiet hours — autonomously, with no restart and no downtime.
 
 </td>
 <td width="33%" valign="top">
@@ -44,29 +44,34 @@ Per-team, per-tag dashboards showing capacity vs. used vs. paid. Drives the conv
 
 ## How it works
 
-1. **Install a 25&nbsp;MB agent** on each VM (one-click Azure VM Extension, AWS SSM, or `curl | bash`). The agent dials out only — no inbound ports, no SSH keys.
-2. **Discover** your existing storage and mount points. You choose which to manage.
-3. **Watch** live metrics flow in. Right-sizing kicks in within seconds of the first surge.
+### 1.&nbsp; We watch your storage 24/7
+Your VMs send health metrics every few seconds. We analyze trends to spot over-provisioned disks costing you money.
+
+### 2.&nbsp; You choose when to optimize
+When we find savings, you click **Schedule pool optimization**. We create the new storage during your off-hours so your live workload isn't disrupted.
+
+### 3.&nbsp; We manage it forever
+After the pool is created, we autonomously expand it when load spikes, shrink it when usage drops, and run safe maintenance (scrub, defrag, rebalance) on a quiet schedule. Everything's auditable in your dashboard.
 
 ## Architecture (high level)
 
 ```
    Your VMs            Storagetax cloud
-  +---------+           +-------------------+
-  |  agent  |  ───────► |  orchestrator     |  ──► metrics TSDB
-  +---------+   WSS     |  (ingest+route)   |
-       ▲                +---------+---------+
-       │                          │
-       │                          ▼
-       │                +-------------------+        +-------------+
-       │                |    right-sizer    |  ◄───  |  dashboard  |
-       │                |  (pool ops)       |        |  (you)      |
-       │                +---------+---------+        +-------------+
-       └────────────────── shrink / expand ──────────────────┘
+  +---------+           +-----------------------+
+  |  agent  |  ───────► |    observability      |  ──► live ring (Redis)
+  +---------+   WSS     |  (ingest + dashboard) |  ──► long-term store (Influx)
+       ▲                +-----------+-----------+
+       │                            │ snapshot push
+       │                            ▼
+       │                +-----------------------+        +-------------+
+       │                |     right-sizer       |  ◄───  |   you       |
+       │                |  (pool create / mgmt) |        | (dashboard) |
+       │                +-----------+-----------+        +-------------+
+       └────────── expand / shrink / scrub / defrag ──────────┘
                           (idempotent, no downtime)
 ```
 
-Five focused services, one job each. None of them run in your environment except the agent.
+Five focused services, one job each. None run in your environment except the agent.
 
 ## Trust by design
 
